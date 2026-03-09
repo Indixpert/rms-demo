@@ -7,6 +7,7 @@ import Menu from './pages/Menu';
 import Customers from './pages/Customers';
 import Analytics from './pages/Analytics';
 import Settings from './pages/Settings';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/tables" element={<Tables />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/menu/:id" element={<ProductDetails />} />
         <Route path="/customers" element={<Customers />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/settings" element={<Settings />} />

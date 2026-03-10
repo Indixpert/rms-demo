@@ -2,26 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-light-secondary dark:bg-dark text-gray-800 dark:text-gray-200;
-  font-family: 'Inter', sans-serif;
-}
-
-/* For custom scrollbars */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@layer base {
+  body {
+    @apply bg-gray-100 dark:bg-dark text-gray-800 dark:text-gray-200;
+    font-family: 'Inter', sans-serif;
+  }
 }
